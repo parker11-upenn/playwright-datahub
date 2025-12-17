@@ -1,0 +1,562 @@
+/* CSS Document */
+    #processing {
+        position: fixed; /* Fix the position relative to the viewport */
+        top: 30%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for the element's own size */
+        z-index: 9999; /* Ensure it stays on top of other elements */
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: add a semi-transparent background */
+        padding: 20px; /* Some padding around the content */
+        border-radius: 10px; /* Rounded corners for better styling */
+        text-align: center; /* Center the text and image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for visibility */
+    }
+
+
+    #Upprocessing {
+        position: fixed; /* Fix the position relative to the viewport */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for the element's own size */
+        z-index: 9999; /* Ensure it stays on top of other elements */
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: add a semi-transparent background */
+        padding: 20px; /* Some padding around the content */
+        border-radius: 10px; /* Rounded corners for better styling */
+        text-align: center; /* Center the text and image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for visibility */
+    }
+
+    #npprocessing {
+        position: fixed; /* Fix the position relative to the viewport */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for the element's own size */
+        z-index: 9999; /* Ensure it stays on top of other elements */
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: add a semi-transparent background */
+        padding: 20px; /* Some padding around the content */
+        border-radius: 10px; /* Rounded corners for better styling */
+        text-align: center; /* Center the text and image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for visibility */
+    }
+
+
+    #unprocessing {
+        position: fixed; /* Fix the position relative to the viewport */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for the element's own size */
+        z-index: 9999; /* Ensure it stays on top of other elements */
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: add a semi-transparent background */
+        padding: 20px; /* Some padding around the content */
+        border-radius: 10px; /* Rounded corners for better styling */
+        text-align: center; /* Center the text and image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for visibility */
+    }
+
+
+    #chasSysprocessing {
+        position: fixed; /* Fix the position relative to the viewport */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for the element's own size */
+        z-index: 9999; /* Ensure it stays on top of other elements */
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: add a semi-transparent background */
+        padding: 20px; /* Some padding around the content */
+        border-radius: 10px; /* Rounded corners for better styling */
+        text-align: center; /* Center the text and image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for visibility */
+    }
+
+
+	#deleteConfirmationModal{
+		top: 30%; alignment-adjust:central; 
+		 
+	}
+
+	#deletePolicyConfirmationModal{
+		top: 30%; alignment-adjust:central;
+		 
+	}
+    
+	#deletePolicyResponseConfirmationModal{
+		top: 30%; alignment-adjust:central;
+		 
+	}
+	
+	#pageprocessing {
+        position: fixed; /* Fix the position relative to the viewport */
+        top: 40%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for the element's own size */
+        z-index: 9999; /* Ensure it stays on top of other elements */
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: add a semi-transparent background */
+        padding: 20px; /* Some padding around the content */
+        border-radius: 10px; /* Rounded corners for better styling */
+        text-align: center; /* Center the text and image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for visibility */
+    }
+
+    #chasprocessing {
+        position: fixed; /* Fix the position relative to the viewport */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for the element's own size */
+        z-index: 9999; /* Ensure it stays on top of other elements */
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: add a semi-transparent background */
+        padding: 20px; /* Some padding around the content */
+        border-radius: 10px; /* Rounded corners for better styling */
+        text-align: center; /* Center the text and image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for visibility */
+    }
+
+    #processingRoom {
+        position: fixed; /* Fix the position relative to the viewport */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for the element's own size */
+        z-index: 9999; /* Ensure it stays on top of other elements */
+        background-color: rgba(255, 255, 255, 0.8); /* Optional: add a semi-transparent background */
+        padding: 20px; /* Some padding around the content */
+        border-radius: 10px; /* Rounded corners for better styling */
+        text-align: center; /* Center the text and image */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for visibility */
+    }
+
+    /* Change cursor to pointer when hovering over P#PersonID# elements */
+    .person-id {
+        cursor: pointer;
+    }
+
+
+	.mic-button {
+		background-color: #28a745;
+		color: white;
+		border: none;
+		/*border-radius: 50%;*/
+		padding: 10px;
+		cursor: pointer;
+	}
+
+	.mic-button:active {
+		background-color: #218838;
+	}
+
+	.mic-button i {
+		font-size: 20px;
+	}
+
+	/* Optional styling to make the icon look like a button */
+	.icon-button {
+		cursor: pointer;
+		font-size: 24px;
+		color: #007bff;
+	}
+
+	.icon-button:hover {
+		color: #0056b3;
+	}
+
+	/* Custom styles for message types */
+	.modal-header-success {
+		background-color: #d4edda;
+		color: #155724;
+	}
+
+	.modal-header-danger {
+		background-color: #f8d7da;
+		color: #721c24;
+	}
+
+	.modal-header-info {
+		background-color: #cce5ff;
+		color: #004085;
+	}
+
+	.modal-header-warning {
+		background-color: #fff3cd;
+		color: #856404;
+	}
+
+	.fa-clock {
+		font-size: 48px; /* Make the clock icon larger */
+	}    
+
+
+.animated--fade-in {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-timing-function: opacity cubic-bezier(0,1,.4,1);
+    animation-timing-function: opacity cubic-bezier(0,1,.4,1)
+}
+
+.bg-gradient-primary {
+    background-color: #4e73df;
+    background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+    background-size: cover
+}
+
+.bg-gradient-secondary {
+    background-color: #858796;
+    background-image: linear-gradient(180deg,#858796 10%,#60616f 100%);
+    background-size: cover
+}
+
+.bg-gradient-success {
+    background-color: #1cc88a;
+    background-image: linear-gradient(180deg,#1cc88a 10%,#13855c 100%);
+    background-size: cover
+}
+
+.bg-gradient-info {
+    background-color: #36b9cc;
+    background-image: linear-gradient(180deg,#36b9cc 10%,#258391 100%);
+    background-size: cover
+}
+
+.bg-gradient-warning {
+    background-color: #f6c23e;
+    background-image: linear-gradient(180deg,#f6c23e 10%,#dda20a 100%);
+    background-size: cover
+}
+
+.bg-gradient-danger {
+    background-color: #e74a3b;
+    background-image: linear-gradient(180deg,#e74a3b 10%,#be2617 100%);
+    background-size: cover
+}
+
+.bg-gradient-light {
+    background-color: #f8f9fc;
+    background-image: linear-gradient(180deg,#f8f9fc 10%,#c2cbe5 100%);
+    background-size: cover
+}
+
+.bg-gradient-dark {
+    background-color: #5a5c69;
+    background-image: linear-gradient(180deg,#5a5c69 10%,#373840 100%);
+    background-size: cover
+}
+
+.bg-gray-100 {
+    background-color: #f8f9fc!important
+}
+
+.bg-gray-200 {
+    background-color: #eaecf4!important
+}
+
+.bg-gray-300 {
+    background-color: #dddfeb!important
+}
+
+.bg-gray-400 {
+    background-color: #d1d3e2!important
+}
+
+.bg-gray-500 {
+    background-color: #b7b9cc!important
+}
+
+.bg-gray-600 {
+    background-color: #858796!important
+}
+
+.bg-gray-700 {
+    background-color: #6e707e!important
+}
+
+.bg-gray-800 {
+    background-color: #5a5c69!important
+}
+
+.bg-gray-900 {
+    background-color: #3a3b45!important
+}
+
+.o-hidden {
+    overflow: hidden!important
+}
+
+.text-xs {
+    font-size: .7rem
+}
+
+.text-lg {
+    font-size: 1.2rem
+}
+
+.text-gray-100 {
+    color: #f8f9fc!important
+}
+
+.text-gray-200 {
+    color: #eaecf4!important
+}
+
+.text-gray-300 {
+    color: #dddfeb!important
+}
+
+.text-gray-400 {
+    color: #d1d3e2!important
+}
+
+.text-gray-500 {
+    color: #b7b9cc!important
+}
+
+.text-gray-600 {
+    color: #858796!important
+}
+
+.text-gray-700 {
+    color: #6e707e!important
+}
+
+.text-gray-800 {
+    color: #5a5c69!important
+}
+
+.text-gray-900 {
+    color: #3a3b45!important
+}
+
+
+.border-left-primary {
+    border-left: .25rem solid #4e73df!important
+}
+
+.border-bottom-primary {
+    border-bottom: .25rem solid #4e73df!important
+}
+
+.border-left-secondary {
+    border-left: .25rem solid #858796!important
+}
+
+.border-bottom-secondary {
+    border-bottom: .25rem solid #858796!important
+}
+
+.border-left-success {
+    border-left: .25rem solid #1cc88a!important
+}
+
+.border-bottom-success {
+    border-bottom: .25rem solid #1cc88a!important
+}
+
+.border-left-info {
+    border-left: .25rem solid #36b9cc!important
+}
+
+.border-bottom-info {
+    border-bottom: .25rem solid #36b9cc!important
+}
+
+.border-left-warning {
+    border-left: .25rem solid #f6c23e!important
+}
+
+.border-bottom-warning {
+    border-bottom: .25rem solid #f6c23e!important
+}
+
+.border-left-danger {
+    border-left: .25rem solid #e74a3b!important
+}
+
+.border-bottom-danger {
+    border-bottom: .25rem solid #e74a3b!important
+}
+
+.border-left-light {
+    border-left: .25rem solid #f8f9fc!important
+}
+
+.border-bottom-light {
+    border-bottom: .25rem solid #f8f9fc!important
+}
+
+.border-left-dark {
+    border-left: .25rem solid #5a5c69!important
+}
+
+.border-bottom-dark {
+    border-bottom: .25rem solid #5a5c69!important
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .35rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+@media (prefers-reduced-motion:reduce) {
+    .badge {
+        transition: none
+    }
+}
+
+a.badge:focus,a.badge:hover {
+    text-decoration: none
+}
+
+.badge:empty {
+    display: none
+}
+
+.btn .badge {
+    position: relative;
+    top: -1px
+}
+
+.badge-pill {
+    padding-right: .6em;
+    padding-left: .6em;
+    border-radius: 10rem
+}
+
+.badge-primary {
+    color: #fff;
+    background-color: #4e73df
+}
+
+a.badge-primary:focus,a.badge-primary:hover {
+    color: #fff;
+    background-color: #2653d4
+}
+
+a.badge-primary.focus,a.badge-primary:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(78,115,223,.5)
+}
+
+.badge-secondary {
+    color: #fff;
+    background-color: #858796
+}
+
+a.badge-secondary:focus,a.badge-secondary:hover {
+    color: #fff;
+    background-color: #6b6d7d
+}
+
+a.badge-secondary.focus,a.badge-secondary:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(133,135,150,.5)
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #1cc88a
+}
+
+a.badge-success:focus,a.badge-success:hover {
+    color: #fff;
+    background-color: #169b6b
+}
+
+a.badge-success.focus,a.badge-success:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(28,200,138,.5)
+}
+
+.badge-info {
+    color: #fff;
+    background-color: #36b9cc
+}
+
+a.badge-info:focus,a.badge-info:hover {
+    color: #fff;
+    background-color: #2a96a5
+}
+
+a.badge-info.focus,a.badge-info:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(54,185,204,.5)
+}
+
+.badge-warning {
+    color: #fff;
+    background-color: #f6c23e
+}
+
+a.badge-warning:focus,a.badge-warning:hover {
+    color: #fff;
+    background-color: #f4b30d
+}
+
+a.badge-warning.focus,a.badge-warning:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(246,194,62,.5)
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #e74a3b
+}
+
+a.badge-danger:focus,a.badge-danger:hover {
+    color: #fff;
+    background-color: #d52a1a
+}
+
+a.badge-danger.focus,a.badge-danger:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(231,74,59,.5)
+}
+
+.badge-light {
+    color: #3a3b45;
+    background-color: #f8f9fc
+}
+
+a.badge-light:focus,a.badge-light:hover {
+    color: #3a3b45;
+    background-color: #d4daed
+}
+
+a.badge-light.focus,a.badge-light:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(248,249,252,.5)
+}
+
+.badge-dark {
+    color: #fff;
+    background-color: #5a5c69
+}
+
+a.badge-dark:focus,a.badge-dark:hover {
+    color: #fff;
+    background-color: #42444e
+}
+
+a.badge-dark.focus,a.badge-dark:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(90,92,105,.5)
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #eaecf4;
+    border-radius: .3rem
+}
+
+@media (min-width: 576px) {
+    .jumbotron {
+        padding:4rem 2rem
+    }
+}
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>checkmark</title>
+    <desc>Checkmark in a green circle</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Prompt-/-Push-/-Success" transform="translate(-150.000000, -188.000000)">
+            <g id="check-icon" transform="translate(150.000000, 188.000000)">
+                <circle id="Oval" fill="#6BBF4E" cx="32" cy="32" r="32"></circle>
+                <path d="M28.6046158,43.7497514 C28.0583655,43.7497514 27.5358653,43.5241263 27.1618026,43.1263136 L17.5371105,32.8762045 C16.7870059,32.0805791 16.8285684,30.827766 17.6241938,30.0796407 C18.4217984,29.3315153 19.6746115,29.3710987 20.4207577,30.166724 L28.5848241,38.8572491 L45.2256655,20.6449486 C45.9658742,19.8354691 47.2167081,19.7820315 48.0242085,20.5182819 C48.8297297,21.2545322 48.8851464,22.5073454 48.1488961,23.3128666 L30.0652415,43.1045428 C29.6951371,43.5122513 29.1686786,43.7457931 28.61847,43.7497514 L28.6046158,43.7497514 Z" id="path-1" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -3,7 +3,7 @@
 This project contains Playwright end-to-end tests for the CHAS DataHub incident workflow.
 
 ## What This Test Does
-[text](tests/v5-full-incident.spec.js)
+tests/v5-full-incident.spec.js
 This test automates the full lifecycle of an incident:
 
 1. Logs in as a user and creates an incident

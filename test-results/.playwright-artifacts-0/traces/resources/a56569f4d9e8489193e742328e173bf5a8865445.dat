@@ -1,1 +1,0 @@
-device=phone1&factor=Duo+Push&postAuthDestination=OIDC_EXIT&browser_features=%7B%22touch_supported%22%3Afalse%2C%22platform_authenticator_status%22%3A%22unavailable%22%2C%22webauthn_supported%22%3Atrue%2C%22screen_resolution_height%22%3A720%2C%22screen_resolution_width%22%3A1280%2C%22screen_color_depth%22%3A30%7D&sid=frameless-b8e12296-bc3a-46eb-850a-be2fa3ee0c73

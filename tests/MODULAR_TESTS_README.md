@@ -72,6 +72,11 @@ Complete archive and un-archive workflow for confirmed incidents.
 - **User**: MCDONALD (Reviewer)
 - **Actions**: Toggle facilities/residential services, confirm incident, archive via mass archive, un-archive from archived tab
 
+### 7. **07-incident-linking-setup.spec.js**
+Creates a second incident for linking purposes and confirms it.
+- **User**: RASHID (Report Writer) → MCDONALD (Reviewer)
+- **Actions**: Create simplified incident (student only), switch user, confirm incident
+
 ## How Tests Share Data
 
 Tests are sequential and the incident ID is **automatically shared** between them:
@@ -107,9 +112,12 @@ npx playwright test tests/05-incident-policies.spec.js --project=chromium --debu
 
 # Test 6: Archive and un-archive incident (requires all previous tests to run first)
 npx playwright test tests/06-incident-archive.spec.js --project=chromium --debug;
+
+# Test 7: Create second incident for linking (can run independently)
+npx playwright test tests/07-incident-linking-setup.spec.js --project=chromium --debug;
 ```
 
-**Note:** Tests must run in order (01 → 02 → 03 → 04 → 05 → 06) because each test depends on the incident ID created in test 01. To run them in sequence:
+**Note:** Tests must run in order (01 → 02 → 03 → 04 → 05 → 06) because each test depends on the incident ID created in test 01. Test 07 is independent and creates its own incident for linking purposes. To run them in sequence:
 ```bash
 npx playwright test tests/0*.spec.js --project=chromium --debug;
 ```
@@ -133,6 +141,9 @@ npx playwright test tests/05-incident-policies.spec.js --headed
 
 # Run test 06 in headed mode to watch archive/un-archive
 npx playwright test tests/06-incident-archive.spec.js --headed
+
+# Run test 07 in headed mode to watch second incident creation
+npx playwright test tests/07-incident-linking-setup.spec.js --headed
 ```
 
 ## Key Improvements

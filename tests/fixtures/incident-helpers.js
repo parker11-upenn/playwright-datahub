@@ -95,11 +95,28 @@ export async function navigateToIncident(page, incId, tabName) {
 /**
  * Save incident ID to a persistent file for sharing between tests
  */
-export function saveIncidentId(incId) {
-  const state = {
-    incId: String(incId),
-    timestamp: new Date().toISOString()
-  };
+export function saveIncidentId(incId, startDate) {
+  const state = fs.existsSync(stateFile)
+    ? JSON.parse(fs.readFileSync(stateFile, 'utf-8'))
+    : {};
+
+  state.incId = String(incId);
+  if (startDate) {
+    state.startDate = startDate;
+  }
+  state.timestamp = new Date().toISOString();
+
+  fs.writeFileSync(stateFile, JSON.stringify(state, null, 2));
+}
+
+export function saveLinkedIncidentId(secondIncId) {
+  const state = fs.existsSync(stateFile)
+    ? JSON.parse(fs.readFileSync(stateFile, 'utf-8'))
+    : {};
+
+  state.secondIncId = String(secondIncId);
+  state.timestamp = new Date().toISOString();
+
   fs.writeFileSync(stateFile, JSON.stringify(state, null, 2));
 }
 
@@ -112,6 +129,31 @@ export function loadIncidentId() {
   }
   const state = JSON.parse(fs.readFileSync(stateFile, 'utf-8'));
   return state.incId;
+}
+
+export function loadSecondIncidentId() {
+  if (!fs.existsSync(stateFile)) {
+    throw new Error('Incident state not found. Make sure the linking test runs first.');
+  }
+  const state = JSON.parse(fs.readFileSync(stateFile, 'utf-8'));
+  if (!state.secondIncId) {
+    throw new Error('Second incident ID not found in incident state. Make sure the linking test saved it.');
+  }
+  return state.secondIncId;
+}
+
+/**
+ * Load the first incident start date from the persistent file
+ */
+export function loadIncidentStartDate() {
+  if (!fs.existsSync(stateFile)) {
+    throw new Error('Incident state not found. Make sure the incident creation test runs first.');
+  }
+  const state = JSON.parse(fs.readFileSync(stateFile, 'utf-8'));
+  if (!state.startDate) {
+    throw new Error('Start date not found in incident state. Make sure the incident creation test saved it.');
+  }
+  return state.startDate;
 }
 
 /**

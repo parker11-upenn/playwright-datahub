@@ -32,6 +32,7 @@ test.describe('Incident Creation', () => {
     // Location Date & Time Tab
     await page.getByRole('tab', { name: ' Location Date & Time' }).click();
     await setIncidentDateWithinLast30Days(page);
+    const incidentStartDate = await page.locator('#incidentDate').inputValue();
     await page.locator('#location1').check();
     await page.waitForTimeout(500);
     await page.locator('#LocID').selectOption('67');
@@ -127,8 +128,8 @@ test.describe('Incident Creation', () => {
     await expect(page).toHaveURL(/dsp_add_incident\.cfm/i);
     incId = new URL(page.url()).searchParams.get('incID');
 
-    // Save the incident ID for subsequent tests
-    saveIncidentId(incId);
+    // Save the incident ID and start date for subsequent tests
+    saveIncidentId(incId, incidentStartDate);
 
     // Cleanup
     await logout(page);

@@ -35,9 +35,9 @@ test.describe('Incident Policy Addition', () => {
     const policyModal = page.locator('.modal-content:has-text("Add Policy")');
     await expect(policyModal).toBeVisible();
 
-    // Select people (Alvin)
-    const alvinCheckbox = policyModal.locator('input[value="ALVIN BI"]');
-    await alvinCheckbox.check();
+    // Select the first available person
+    const firstPersonCheckbox = policyModal.locator('input[type="checkbox"]').first();
+    await firstPersonCheckbox.check();
     
     // Select policies (Noise and Disruptive Behavior)
     await policyModal.locator('#policy_16').check(); // Noise

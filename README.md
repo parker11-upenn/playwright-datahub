@@ -72,6 +72,21 @@ Complete archive and un-archive workflow for confirmed incidents.
 - **User**: MCDONALD (Reviewer)
 - **Actions**: Toggle facilities/residential services, confirm incident, archive via mass archive, un-archive from archived tab
 
+### 7. **07-incident-linking.spec.js**
+Create a second incident, confirm it, and link it to the original incident.
+- **User**: RASHID (Report Writer) and MCDONALD (Reviewer)
+- **Actions**: Create second incident, confirm as reviewer, and open Link Details for incident linking
+
+### 8. **08-incident-search.spec.js**
+Search for a linked incident by ID from the incidents dashboard.
+- **User**: MCDONALD (Reviewer)
+- **Actions**: Open Incidents, switch to Search tab, enter the saved linked incident ID, and perform incident search
+
+### 9. **09-incident-settings.spec.js**
+Test incident settings functionality for granting and revoking access.
+- **User**: MCDONALD (Reviewer)
+- **Actions**: Navigate to linked incident, open Incident Settings modal, search for user to grant access
+
 ## How Tests Share Data
 
 Tests are sequential and the incident ID is **automatically shared** between them:
@@ -107,9 +122,18 @@ npx playwright test tests/05-incident-policies.spec.js --project=chromium --debu
 
 # Test 6: Archive and un-archive incident (requires all previous tests to run first)
 npx playwright test tests/06-incident-archive.spec.js --project=chromium --debug;
+
+# Test 7: Create and link second incident (independent)
+npx playwright test tests/07-incident-linking.spec.js --project=chromium --debug;
+
+# Test 8: Search for the linked incident by ID (requires test 07)
+npx playwright test tests/08-incident-search.spec.js --project=chromium --debug;
+
+# Test 9: Incident settings access control (requires test 07)
+npx playwright test tests/09-incident-settings.spec.js --project=chromium --debug;
 ```
 
-**Note:** Tests must run in order (01 → 02 → 03 → 04 → 05 → 06) because each test depends on the incident ID created in test 01. To run them in sequence:
+**Note:** Tests must run in order (01 → 02 → 03 → 04 → 05 → 06) because each test depends on the incident ID created in test 01. Test 7 is independent and can be run separately. To run them in sequence:
 ```bash
 npx playwright test tests/0*.spec.js --project=chromium --debug;
 ```
